@@ -9,40 +9,40 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.blue[900],
+        backgroundColor: Colors.indigo,
         body: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CircleAvatar(
-                radius: 50.0,
                 backgroundImage: AssetImage("images/photo.jpg"),
+                radius: 50.0,
               ),
               Text(
                 "Saidakbar Juraev",
                 style: TextStyle(
-                  fontFamily: "Martian",
-                  fontSize: 30.0,
                   color: Colors.white,
+                  fontSize: 30.0,
+                  fontFamily: "Martian",
                 ),
               ),
               Text(
-                'Flutter Developer',
+                "Flutter Developer",
                 style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20.0,
                   fontFamily: "Martian",
                   fontWeight: FontWeight.w200,
-                  fontSize: 20.0,
-                  color: Colors.white,
                 ),
               ),
               SizedBox(
                 width: 150.0,
                 height: 30.0,
                 child: Divider(
-                  color: Colors.black,
+                  color: Colors.white,
                   thickness: 1,
                 ),
               ),
@@ -51,30 +51,28 @@ class MyApp extends StatelessWidget {
                 child: ListTile(
                   leading: Icon(
                     Icons.phone,
-                    color: Colors.blue[900],
+                    color: Colors.indigo,
                   ),
                   title: Text(
-                    "+44 123 456 789",
+                    "+44 77 123 456 789",
                     style: TextStyle(
-                      fontSize: 15.0,
+                      color: Colors.indigo,
                       fontFamily: "Martian",
-                      color: Colors.blue[900],
                     ),
                   ),
                 ),
               ),
               Card(
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+                margin: EdgeInsets.all(20.0),
                 child: ListTile(
                   leading: Icon(
                     Icons.email,
-                    color: Colors.blue[900],
+                    color: Colors.indigo,
                   ),
                   title: Text(
                     "akbar@gmail.com",
                     style: TextStyle(
-                      color: Colors.blue[900],
-                      fontSize: 15.0,
+                      color: Colors.indigo,
                       fontFamily: "Martian",
                     ),
                   ),
